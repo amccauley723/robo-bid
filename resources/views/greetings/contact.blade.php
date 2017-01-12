@@ -1,5 +1,5 @@
 @extends('app')
 
 @section('content')
-<h1>Are you hungry?</h1>
+    <h1>Contact</h1>
 @stop
