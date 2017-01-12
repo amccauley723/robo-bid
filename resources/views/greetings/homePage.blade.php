@@ -24,20 +24,6 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    {{--<div id="header-nav-outside">--}}
-        {{--<div id="header-nav-inside" class="desktop">--}}
-            {{--<div class="header-cta col-md-6">--}}
-                {{--{{ $callToAction }}--}}
-            {{--</div>--}}
-            {{--<nav class="header-navigation col-md-6">--}}
-                {{--<ul class="nav nav-pills">--}}
-                    {{--@foreach ($navItems as $navItem)--}}
-                        {{--<li class="active"><a href="{{ $navItem['link'] }}">{{ $navItem['title'] }}</a></li>--}}
-                    {{--@endforeach--}}
-                {{--</ul>--}}
-            {{--</nav>--}}
-        {{--</div>--}}
-    {{--</div>--}}
 @stop
 
 @section('logo')
@@ -61,7 +47,7 @@
     @foreach($videos as $video)
         <div class="video-container col-xs-12 col-md-4">
             <h3>{{ $video['title'] }}</h3>
-            <iframe width="300" height="169" src="https://www.youtube.com/embed/{{ $video['id'] }}" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/{{ $video['id'] }}" frameborder="0" allowfullscreen></iframe>
             <p>{{ $video['desc'] }}</p>
         </div>
     @endforeach
