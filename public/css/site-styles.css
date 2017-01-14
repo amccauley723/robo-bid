@@ -6,6 +6,10 @@ ul.borderless li {
     border: none;
 }
 
+div {
+    background-color: red;
+
+}
 /*!* Small devices (tablets, 768px and up) *!*/
 /*@media (min-width: @screen-sm-min) {*/
 
