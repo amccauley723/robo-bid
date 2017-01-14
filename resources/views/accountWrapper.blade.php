@@ -6,5 +6,7 @@
 </head>
 <body>
 
+@yield('articles')
+
 </body>
 </html>

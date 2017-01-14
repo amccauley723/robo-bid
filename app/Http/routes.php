@@ -6,3 +6,4 @@ Route::get('/view-packages', 'PagesController@viewPackages');
 Route::get('/contact', 'PagesController@contact');
 
 Route::get('articles', 'ArticlesController@index');
+Route::get('articles/{id}', 'ArticlesController@show');
