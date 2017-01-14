@@ -18,5 +18,15 @@ class ArticlesController extends Controller
         return view('articles.index', compact('articles'));
 
     }
+    public function show($id)
+    {
+
+        $article = Article::find($id);
+
+//        peek into returned data. debugging use only
+//        dd($article);
+        return $article;
+
+    }
 
 }
