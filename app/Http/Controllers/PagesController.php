@@ -125,7 +125,9 @@ class PagesController extends Controller
     
     public function accountLogin()
     {
-        return view('greetings.accountLogin');
+        $username = ['Taco', 'Burrito', 'Mexico'];
+
+        return view('greetings.accountLogin', compact('username'));
     }
     
     public function viewPackages()

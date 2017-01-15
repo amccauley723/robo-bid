@@ -1,11 +1,16 @@
 @extends('accountWrapper')
 
-@section('articles')
-    <h1>Articles</h1>
+@section('content')
+    <div class="breadcrumb"><a href="./articles/create">Add new shirt -></a></div>
+
+    <h1>Shirts</h1>
     @foreach($articles as $article)
         <article>
-            <a href=""><h2>{{ $article['title'] }}</h2></a>
-            <p>{{ $article['body'] }}</p>
+            <a href="{{ url('articles', $article->id) }}"><h2>{{ $article->shirtname }}</h2></a>
+            <p>{{ $article->size }}</p>
+            <p>{{ $article->color }}</p>
+            <p>{{ $article->price }}</p>
+            <p>{{ $article->published_at->diffForHumans() }}</p>
         </article>
     @endforeach
 @stop()
