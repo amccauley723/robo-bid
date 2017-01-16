@@ -11,12 +11,11 @@ Route::get('/contact', 'PagesController@contact');
 //Route::post('articles', 'ArticlesController@store');
 
 Route::resource('articles', 'ArticlesController');
-Route::resource('accounts', 'AccountsController');
+Route::resource('client', 'AccountsController');
 
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/dashboard', 'HomeController@dashboard');
+Route::get('/leads', 'HomeController@leads');
+Route::get('/marketing', 'HomeController@marketing');
+Route::get('/profile', 'HomeController@profile');

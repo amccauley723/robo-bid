@@ -1,10 +1,42 @@
+:root {
+    --robo-orange: #f36d21;
+    --robo-light-gray: #f8f8f8;
+    --robo-font-gray: #777777;
+}
+
 div#header-nav-outside {
     background: #e3e3e3;
 }
 
-ul.borderless li {
-    border: none;
+.list-group-item {
+    border: none !important;
+    background: transparent !important;
 }
 
-
-
+.featured-list-item {
+    font-size: 18px;
+}
+div.row {
+    margin: 40px 0;
+}
+div.videos {
+    padding: 40px 0;
+    border: 1px dotted var(--robo-orange);
+    border-left: none;
+    border-right: none;
+}
+div.intro-copy {
+    font-size: 36px;
+}
+.main-logo-image {
+    text-align: center;
+}
+.jumbotron {
+    background-color: var(--robo-light-gray) !important;
+    color: var(--robo-font-gray) !important;
+}
+.btn-robo {
+    color: #fff;
+    background-color: var(--robo-orange);
+    border-color: #2e6da4;
+}

@@ -6,35 +6,6 @@ class PagesController extends Controller
 {
     public function homePage()
     {
-        $navItems =  array(
-            0 => array(
-                'title' => 'home',
-                'id' => 'home',
-                'href' => '/',
-                'data' => '',
-                'role' => '',
-                'class' => ''
-            ),
-            1 => array(
-                'title' => 'account login',
-                'id' => 'account-login',
-                'href' => '#modal-container-login',
-                'data' => 'modal',
-                'role' => '',
-                'class' => ''
-            ),
-            2 => array(
-                'title' => 'view features',
-                'id' => 'view-features',
-                'href' => '#view-features',
-                'data' => '',
-                'role' => '',
-                'class' => ''
-            )
-        );
-        $callToAction = 'Call today to get started! 612-888-4678';
-        $logoImage = 'https://www.robo-bid.com/img/animated_logo.gif';
-        $introCopy = 'A RoboBID™ form is the smartest and most efficient investment you can make for your business! Get all your leads and bids in one easy-to-use, organized interface. It\'s like having a free assistant on the clock 24/7.';
         $startAccountButton = 'Start your FREE account now!';
         $videos = array(
             0 => array(
