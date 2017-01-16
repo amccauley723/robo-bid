@@ -18,6 +18,13 @@ class AccountsController extends Controller
 
     }
 
+    public function show($id)
+    {
+        $user = RoboUsers::findorfail($id);
+        return view('accounts.user', compact('user'));
+
+    }
+
     public function create()
     {
 

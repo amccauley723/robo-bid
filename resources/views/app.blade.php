@@ -27,6 +27,48 @@
         @yield('featuresGrid')
         @yield('footer')
     </div>
+
+    <div class="modal fade" id="modal-container-signup" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Start your FREE trial!
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    {!! Form::open(['action' => 'AccountsController@store']) !!}
+                    @include('accounts._form', ['submitButtonText' => 'Create Account Now'])
+                    {!! Form::close() !!}
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="modal-container-login" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Log into your account.
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    {!! Form::open(['action' => 'AccountsController@store']) !!}
+                    @include('accounts._login', ['submitButtonText' => 'Create Account Now'])
+                    {!! Form::close() !!}
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

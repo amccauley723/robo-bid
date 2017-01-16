@@ -17,8 +17,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    @foreach ($navItems as $navItem)
-                        <li class=""><a href="{{ $navItem['link'] }}">{{ $navItem['title'] }}</a></li>
+                    @foreach($navItems as $navItem)
+                            <li class=""><a id="{{ $navItem['id'] }}" href="{{ $navItem['href'] }}" role="button" class="{{ $navItem['class'] }}" data-toggle="{{ $navItem['data'] }}">{{ $navItem['title'] }}</a></li>
                     @endforeach
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -38,7 +38,7 @@
             {{ $introCopy }}
         </div>
         <div class="start-account-button col-md-4">
-            <button class="btn">{{ $startAccountButton }}</button>
+            <a id="account-login" href="#modal-container-signup" role="button" class="btn btn-block" data-toggle="modal">Start your Free trial today!</a>
         </div>
     </div>
 @stop
@@ -78,7 +78,9 @@
 @stop
 
 @section('featuresGrid')
-
+    <div id="view-packages">
+        Packages
+    </div>
 @stop
 
 @section('footer')

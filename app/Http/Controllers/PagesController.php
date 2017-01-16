@@ -9,19 +9,35 @@ class PagesController extends Controller
         $navItems =  array(
             0 => array(
                 'title' => 'home',
-                'link' => '/'
+                'id' => 'home',
+                'href' => '/',
+                'data' => '',
+                'role' => '',
+                'class' => ''
             ),
             1 => array(
                 'title' => 'account login',
-                'link' => '/account-login'
+                'id' => 'account-login',
+                'href' => '#modal-container-login',
+                'data' => 'modal',
+                'role' => '',
+                'class' => ''
             ),
             2 => array(
-                'title' => 'view packages',
-                'link' => '/view-packages'
+                'title' => 'view features',
+                'id' => 'view-features',
+                'href' => '#view-features',
+                'data' => '',
+                'role' => '',
+                'class' => ''
             ),
             3 => array(
                 'title' => 'contact',
-                'link' => '/contact'
+                'id' => 'contact',
+                'href' => '/contact',
+                'data' => '',
+                'role' => '',
+                'class' => ''
             )
         );
         $callToAction = 'Call today to get started! 612-888-4678';

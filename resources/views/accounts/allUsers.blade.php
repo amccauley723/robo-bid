@@ -5,7 +5,7 @@
     <hr>
     <div class="list-group">
     @foreach($accounts as $account)
-            <div class="list-group-item"> <a href="">{{ $account->business_name }}</a> -  {{ $account->created_at->diffForHumans() }}</div>
+            <div class="list-group-item"> <a href="accounts/{{$account->id}}">{{ $account->business_name }}</a> -  {{ $account->created_at->diffForHumans() }}</div>
     @endforeach
     </div>
 @stop
