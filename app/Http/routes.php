@@ -12,3 +12,11 @@ Route::get('/contact', 'PagesController@contact');
 
 Route::resource('articles', 'ArticlesController');
 Route::resource('accounts', 'AccountsController');
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

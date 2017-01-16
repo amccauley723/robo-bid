@@ -63,19 +63,19 @@
     </div>
 @stop
 
-@section('signUpForm')
-    <div class="signup-form col-md-12">
-        <form id="signup-form">
-            @foreach($formFields as $formField)
-                <div class="form-group">
-                    <label for="{{ $formField['id'] }}">{{ $formField['placeholder'] }}</label>
-                    <input id="{{ $formField['id'] }}" class="form-control" placeholder="{{ $formField['placeholder'] }}" type="{{ $formField['type'] }}" title="{{ $formField['placeholder'] }}" {{ $formField['required'] }}>
-                </div>
-            @endforeach
-            <button class="btn" type="submit">Sign Up</button>
-        </form>
-    </div>
-@stop
+{{--@section('signUpForm')--}}
+    {{--<div class="signup-form col-md-12">--}}
+        {{--<form id="signup-form">--}}
+            {{--@foreach($formFields as $formField)--}}
+                {{--<div class="form-group">--}}
+                    {{--<label for="{{ $formField['id'] }}">{{ $formField['placeholder'] }}</label>--}}
+                    {{--<input id="{{ $formField['id'] }}" class="form-control" placeholder="{{ $formField['placeholder'] }}" type="{{ $formField['type'] }}" title="{{ $formField['placeholder'] }}" {{ $formField['required'] }}>--}}
+                {{--</div>--}}
+            {{--@endforeach--}}
+            {{--<button class="btn" type="submit">Sign Up</button>--}}
+        {{--</form>--}}
+    {{--</div>--}}
+{{--@stop--}}
 
 @section('featuresGrid')
     <div id="view-packages">

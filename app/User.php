@@ -24,14 +24,4 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    /**
-     * A user can make many tshirts
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function article(){
-
-        return $this->hasMany('App/createTshirtTables');
-
-
-}
 }

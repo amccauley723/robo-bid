@@ -30,14 +30,6 @@ class PagesController extends Controller
                 'data' => '',
                 'role' => '',
                 'class' => ''
-            ),
-            3 => array(
-                'title' => 'contact',
-                'id' => 'contact',
-                'href' => '/contact',
-                'data' => '',
-                'role' => '',
-                'class' => ''
             )
         );
         $callToAction = 'Call today to get started! 612-888-4678';
